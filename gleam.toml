@@ -1,0 +1,12 @@
+name = "bitcoin"
+version = "1.0.0"
+description = "Gleam package to interface with Bitcoin"
+licences = ["MIT"]
+repository = { type = "github", user = "denisdotdev", repo = "gleam-bitcoin" }
+links = [{ title = "Website", href = "https://www.github.com/denisdotdev/gleam-bitcoin" }]
+
+[dependencies]
+gleam_stdlib = ">= 0.44.0 and < 2.0.0"
+
+[dev-dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"

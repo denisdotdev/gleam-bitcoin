@@ -1,3 +1,8 @@
+import types/transaction.{type Transaction}
+
+pub type Hash256 = BitArray
+pub type BlockHash = BitArray
+
 pub type BlockHeader {
   BlockHeader(
     version: Int,

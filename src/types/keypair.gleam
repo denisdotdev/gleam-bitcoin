@@ -1,3 +1,8 @@
+import types/network.{type Network}
+
+pub type PrivateKey = BitArray
+pub type PublicKey = BitArray
+
 pub type KeyPair {
   KeyPair(private_key: PrivateKey, public_key: PublicKey, compressed: Bool)
 }

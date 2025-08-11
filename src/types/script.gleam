@@ -1,7 +1,23 @@
 pub type ScriptOpCode {
-  OP_0
-  OP_PUSHDATA1
-  OP_PUSHDATA2
-  OP_PUSHDATA4
-  OP_1NEGATE
+  Op0
+  OpPushdata1
+  OpPushdata2
+  OpPushdata4
+  Op1negate
+  Op1
+  OpTrue
+  OpDup
+  OpHash160
+  OpEqualverify
+  OpChecksig
+  OpEqual
+  OpCheckmultisig
+  OpReturn
 }
+
+pub type ScriptElement {
+  Op(ScriptOpCode)
+  Data(BitArray)
+}
+
+pub type Script = List(ScriptElement)

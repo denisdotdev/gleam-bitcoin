@@ -1,3 +1,5 @@
+import types/network.{type Network}
+
 pub type AddressType {
   P2PKH
   P2SH
